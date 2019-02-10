@@ -1,0 +1,89 @@
+body {
+  background-color: #abbcd8;
+  font-family: "Poppins", "Courier", "sans";
+}
+
+body > * { 
+  display: inline-block;
+  background-color: #d7dbe2;
+  border-style: none;
+  border-radius: 5px;
+  color: #051d42;
+  box-shadow: 3px 3px 1px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 5vh;
+  margin-left: 65px;
+  margin-right: 65px;
+  padding: 10px;
+  min-width: 75px;
+  max-width: 300px;
+}
+
+#input, #rezultat {
+  padding: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  min-width: 300px;
+  max-width: 350px;
+}
+
+div {
+  padding: 10px;
+}
+
+input, select {
+  font-size: 1.2rem;
+  width: 30%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #8495b2;
+  border-width: 2px;
+}
+
+input:hover, select:hover {
+  border-color: #4a586d;
+}
+
+button {
+  background-color: #111b2b;
+  border: none;
+  color: #d7dbe2;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 4px 17px;
+  border-radius: 5px;
+  margin
+  font-family: "Poppins", "Courier", "sans";
+}
+
+button:hover {
+  background-color: #375e9b;
+  cursor: pointer;
+}
+  
+#dob:hover, #masa:hover, #visina:hover {
+  cursor: text;
+} 
+
+#spol:hover > * {
+  cursor: pointer;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+#rezultat {
+  text-align: center;
+}

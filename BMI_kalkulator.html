@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+  
+  <head>
+    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/kalkulator_style.css" type="text/css">
+    <!-- <link rel="stylesheet" media="handheld" href="css/kalkulator_style_mobile.css" type="text/css"> this part isn't working-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+    <title>BMI kalkulator</title>
+    
+  </head>
+  
+  <body>
+    
+    <h1>BMI kalkulator</h1>
+    
+    <section id="input">
+        <div id="dob">
+          <label for="dob_inp"> Dob (god):</label>
+          <input id="dob_inp" name="dob" type="number" min=20 required></input>
+        </div>
+      <div id="spol">
+        <label for="spol_inp">Spol:</label>
+          <select id="spol_inp">
+            <option value="M">M</option>
+            <option value="Ž">Ž</option>
+        </select>
+        </div>
+        <div id="masa">
+          <label for="masa_inp"> Masa (kg):</label>
+          <input id="masa_inp" name="masa" type="number" required></input>
+        </div>
+        <div id="visina">
+          <label for="visina_inp"> Visina (cm):</label>
+          <input id="visina_inp" name="visina" type="number" step=1 min=100 max=280 required></input>
+        </div>
+        <button id="gumb" type="button">Izračunaj</button>
+    </section> 
+
+  <script src="js/BMI_kalkulator.js"></script>
+  </body>
+</html>
