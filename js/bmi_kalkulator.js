@@ -11,9 +11,9 @@ function bmi() {
 
     var c=m/(v*v);
     var rez=document.createElement('section');
-    rez.textContent='Vaš BMI iznosi '+ c.toFixed(2) +'.';
+    rez.textContent='Vaš BMI iznosi '+ c.toFixed(1) +'.';
     rez.id='rezultat';
-    document.body.append(rez); 
+    document.body.append(rez);
 }
 
 document.querySelector('#gumb').addEventListener('click', bmi, false);
