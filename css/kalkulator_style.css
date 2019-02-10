@@ -3,8 +3,7 @@ body {
   font-family: "Poppins", "Courier", "sans";
 }
 
-body > * { 
-  display: inline-block;
+body > * {
   background-color: #d7dbe2;
   border-style: none;
   border-radius: 5px;
