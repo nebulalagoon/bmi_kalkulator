@@ -8,6 +8,8 @@ body > * {
   border-style: none;
   color: #222222;
   box-shadow: 3px 3px 1px;
+  max-width: 350px;
+  padding: 10px;
 }
 
 h1 {
@@ -16,19 +18,15 @@ h1 {
   font-size: 1.4rem;
   margin-left: 5vw;
   margin-right: 5vw;
-  padding: 10px;
-  max-width: 300px;
 }
 
 #input, .rezultat {
-  padding: 10px;
   margin-left: 5vw;
   margin-right: 5vw;
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 1.4rem;
-  max-width: 300px;
 }
 
 div {
@@ -59,6 +57,7 @@ button {
   font-size: 1.4rem;
   padding: 4px 17px;
   font-family: "Poppins", "Courier", "sans";
+  margin-left: 25%;
 }
 
 button:hover {
