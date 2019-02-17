@@ -1,5 +1,5 @@
 body {
-  background-color: #e6e6ec;
+  background-color: #eaece6;
   font-family: "Poppins", "Courier", "sans";
 }
 
@@ -83,7 +83,7 @@ label:hover {
 }
 
 #greska {
-  background-color: #442929;
+  background-color: #222222;
   border: none;
   color: #b9b9b9;
   text-align: center;
@@ -91,5 +91,5 @@ label:hover {
   font-size: 1.3rem;
   padding: 10px;
   font-family: "Poppins", "Courier", "sans";
-  box-shadow: 3px 3px 1px;
+  box-shadow: 3px 3px 1px #131313;
 }
