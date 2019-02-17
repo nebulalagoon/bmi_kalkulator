@@ -15,7 +15,7 @@ function racun() {
   let visinaInput = document.querySelector('#visina_inp').value/100;
 
 
-  if ((masaInput === 0) || (visinaInput === 0)) {
+  if ((masaInput <= 0) || (visinaInput <= 100)) {
     const pog = document.createElement('section'); //dodavanje greške
     pog.textContent = 'Molim unesite valjane podatke.';
     pog.className = 'rezultat';
