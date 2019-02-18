@@ -1,28 +1,26 @@
 body {
-  background-color: #ffccaa;
+  background-color: #9e9289;
   font-family: "Poppins", "Courier", "sans";
 }
 
 body > * {
-  background-color: #ececec;
+  background-color: #e7e2d8;
   border-style: none;
   color: #222222;
-  box-shadow: 3px 3px 1px #ddaa77;
+  box-shadow: 3px 3px 1px #3f3123;
   max-width: 350px;
   padding: 10px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 h1 {
   text-align: center;
   font-weight: bold;
   font-size: 35px;
-  margin-left: 5vw;
-  margin-right: 5vw;
 }
 
 #input, .rezultat {
-  margin-left: 5vw;
-  margin-right: 5vw;
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: normal;
@@ -55,9 +53,11 @@ button {
   text-align: center;
   font-weight: bold;
   font-size: 1.4rem;
+  width: 150px;
   padding: 4px 17px;
   font-family: "Poppins", "Courier", "sans";
-  margin-left: 25%;
+  display: block;
+  margin: 0 auto;
 }
 
 button:hover {
@@ -79,6 +79,7 @@ label:hover {
 
 .rezultat {
   text-align: center;
+  font-weight: bold;
 }
 
 #greska {
