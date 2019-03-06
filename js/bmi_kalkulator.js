@@ -26,7 +26,7 @@ while (r) {
    document.body.appendChild(pog);
  } else if (dobInput < 18) {
   const upozorenje = document.createElement('section');
-  upozorenje.textContent = 'BMI nije prikladan alat za ocjenjivanje uhranjenosti djece i adolescenata mlađih od 18 godina';
+  upozorenje.textContent = 'BMI nije prikladan alat za ocjenjivanje uhranjenosti djece i adolescenata mlađih od 18 godina.';
   upozorenje.className = 'rezultat';
   upozorenje.id = 'upozorenje';
   document.body.appendChild(upozorenje);
