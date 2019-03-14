@@ -5,41 +5,41 @@ const bmi = (m,v) => {
 
 
 //callback funkcija
-function racun() {
+function calculate() {
 
  const d = document.querySelector('body'); //micanje starog rezultata
- const r = d.querySelector('.rezultat');
+ const r = d.querySelector('.result');
 
-while (r) {
+if (r) {
        d.removeChild(r);
    };
 
- let masaInput = document.querySelector('#masa_inp').value;
- let visinaInput = document.querySelector('#visina_inp').value/100;
- let dobInput = document.querySelector('#dob_inp').value;
+ let massInput = document.querySelector('#mass_inp').value;
+ let heightInput = document.querySelector('#height_inp').value/100;
+ let ageInput = document.querySelector('#age_inp').value;
 
- if ((masaInput <= 0) || (visinaInput <= 0)) {
-   const pog = document.createElement('section'); //dodavanje greške
-   pog.textContent = 'Molim unesite valjane podatke.';
-   pog.className = 'rezultat';
-   pog.id = 'greska';
-   document.body.appendChild(pog);
- } else if (dobInput < 18) {
-  const upozorenje = document.createElement('section');
-  upozorenje.textContent = 'BMI nije prikladan alat za ocjenjivanje uhranjenosti djece i adolescenata mlađih od 18 godina.';
-  upozorenje.className = 'rezultat';
-  upozorenje.id = 'upozorenje';
-  document.body.appendChild(upozorenje);
+ if ((massInput <= 0) || (heightInput <= 0)) {
+   const err = document.createElement('section'); //dodavanje greške
+   err.textContent = 'Molim unesite valjane podatke.';
+   err.className = 'result';
+   err.id = 'error';
+   document.body.appendChild(err);
+ } else if (ageInput < 18) {
+  const warning = document.createElement('section');
+  warning.textContent = 'BMI nije prikladan alat za ocjenjivanje uhranjenosti djece i adolescenata mlađih od 18 godina.';
+  warning.className = 'result';
+  warning.id = 'warning';
+  document.body.appendChild(warning);
  } else {
-   let c = bmi(masaInput, visinaInput);
-   const rez = document.createElement('section'); //dodavanje novog elementa
-   rez.textContent = 'Vaš BMI iznosi '+ c.toFixed(1) +'.';
-   rez.className = 'rezultat';
-   document.body.appendChild(rez);
+   let c = bmi(massInput, heightInput);
+   const res = document.createElement('section'); //dodavanje novog elementa
+   res.textContent = 'Vaš BMI iznosi '+ c.toFixed(1) +'.';
+   res.className = 'result';
+   document.body.appendChild(res);
  }
 
 };
 
 
 //gumb - event listener
-document.querySelector('#gumb').addEventListener('click', racun, false); 
+document.querySelector('#run').addEventListener('click', calculate, false); 

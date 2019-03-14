@@ -20,7 +20,7 @@ h1 {
   font-size: 35px;
 }
 
-#input, .rezultat {
+#input, .result {
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: normal;
@@ -65,24 +65,20 @@ button:hover {
   cursor: pointer;
 }
   
-#dob:hover, #masa:hover, #visina:hover {
+#age:hover, #mass:hover, #height:hover {
   cursor: text;
 } 
-
-#spol:hover > * {
-  cursor: pointer;
-}
 
 label:hover {
   cursor: pointer;
 }
 
-.rezultat {
+.result {
   text-align: center;
   font-weight: bold;
 }
 
-#greska, #upozorenje {
+#error, #warning {
   background-color: #555555;
   border: none;
   color: #d7dbe2;
