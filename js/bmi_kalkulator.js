@@ -208,8 +208,8 @@ function bmiCheck (x, age, sex) {
   //messages
   const under = 'Vaša tjelesna masa je preniska';
   const normal = 'Vaša tjelesna masa je normalna.';
-  const over = 'Vaša tjelesna masa je viša od prosjeka.';
-  const obese = 'Vaša tjelesna masa je previsoka.';
+  const over = 'Vaša tjelesna masa je viša od preporučene.';
+  const obese = 'Vaša tjelesna masa je izrazito viša od preporučene.';
 
   if (age >= 65) {
     if (x < 25) {
